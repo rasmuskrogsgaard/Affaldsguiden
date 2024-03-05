@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import style from "./hero.module.scss";
 import rightArrowIcon from "../../assets/icon-arrow-right.svg";
 import leftArrowIcon from "../../assets/icon-arrow-left.svg";
+import Button from "../Button/Button";
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderArray = [
-    "http://localhost:4000/Assets/Images/Slideshow/affald-skov-1.jpg",
-    "http://localhost:4000/Assets/Images/Slideshow/affald-strand-2.jpg",
-    "http://localhost:4000/Assets/Images/Slideshow/malerspande.jpg",
+    "http://localhost:3000/Assets/Images/Slideshow/affald-skov-1.jpg",
+    "http://localhost:3000/Assets/Images/Slideshow/affald-strand-2.jpg",
+    "http://localhost:3000/Assets/Images/Slideshow/malerspande.jpg",
   ];
 
   const handleNextSlide = () => {
@@ -34,13 +35,28 @@ export const Hero = () => {
     <>
       <div className={style.heroContainer}>
         <div className={style.heroImageContainer}>
-          <img className={style.heroImage} src={sliderArray[currentSlide]} alt="Hero Slide" />
+          <img
+            className={style.heroImage}
+            src={sliderArray[currentSlide]}
+            alt="Hero Slide"
+          />
           <button className={style.arrowLeft} onClick={handlePreviousSlide}>
             <img src={leftArrowIcon} />
           </button>
           <button className={style.arrowRight} onClick={handleNextSlide}>
             <img src={rightArrowIcon} />
           </button>
+          <div className={style.heroBoks}>
+            <h2>Find og andmeld genbrugsstationer</h2>
+            <div className={style.buttonContainer}>
+              <Button
+              name="Find station"
+              />
+              <Button
+              name="Log ind"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

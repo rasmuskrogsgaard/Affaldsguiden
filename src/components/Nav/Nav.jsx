@@ -10,7 +10,7 @@ export const Navbar = () => {
         <div className={style.logoContainer}>
           <img src={logo}></img>
 
-          <h1>Affaldsguiden</h1>
+          <h1><a href="/">Affaldsguiden</a></h1>
         </div>
         <ul>
           <li>

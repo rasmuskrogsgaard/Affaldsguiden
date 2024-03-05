@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-green);
+    border: 7px solid var(--secondary-green);
+    border-radius: 7px;
+    color: white;
+}

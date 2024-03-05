@@ -6,18 +6,19 @@
 
 .heroImageContainer{
     position: relative;
-    
-    img{
-        width: 100%;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-.heroImg{
+.heroImage{
     width: 100%;
-    
+    height: 70vh;
+    object-fit: cover;
    }
 .arrowRight{
     position: absolute;
-    right: 0;
+    right: 100px;
     top: 50%;
     background-color: transparent;
     border: none;
@@ -26,8 +27,36 @@
 
 .arrowLeft{
     position: absolute;
-    left: 0;
+    left: 100px;
     top: 50%;
     background-color: transparent;
     border: none;
+}
+
+.heroBoks{
+    position: absolute;
+    bottom: -70px;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--secondary-green);
+    h2{
+        font-weight: 100;
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        button{
+            padding: 10px;
+            border: none;
+            width: 100px;
+            background-color: var(--primary-green);
+            color: white;
+        }
+    }
+    
+    
 }
