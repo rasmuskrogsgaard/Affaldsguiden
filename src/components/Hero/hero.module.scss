@@ -1,0 +1,33 @@
+.heroStyleContainer{
+    width: 100%;
+
+   
+}
+
+.heroImageContainer{
+    position: relative;
+    
+    img{
+        width: 100%;
+    }
+}
+.heroImg{
+    width: 100%;
+    
+   }
+.arrowRight{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+
+.arrowLeft{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+}
