@@ -11,6 +11,7 @@ export const Navbar = () => {
           <img src={logo}></img>
 
           <h1><a href="/">Affaldsguiden</a></h1>
+          
         </div>
         <ul>
           <li>

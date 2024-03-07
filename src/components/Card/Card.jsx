@@ -1,5 +1,5 @@
 import React from 'react';
-
+import style from "./card.module.scss"
 const Card = (props) => {
     const cardStyle = {
         fontSize: props.fontSize || '16px', 
@@ -14,17 +14,30 @@ const Card = (props) => {
         justifyContent: 'center', 
         alignItems: 'center', 
         textAlign: 'center', 
-    };
+        textDecoration: 'none',
+        borderRadius: "15px",
+      
+        
+    };  
 
     const imgStyle = {
         width: '100%',
         height: 'auto', 
+        borderRadius: '15px'
     };
 
+    const titleStyle = {
+        textDecoration: 'none',
+
+
+    }   
+
+    
+
     return (
-        <div style={cardStyle}>
+        <div style={cardStyle} className={style.card}> 
             <img src={props.imageSrc} alt={props.imageAlt} style={imgStyle} />
-            <h2>{props.title}</h2>
+            <h2 style={titleStyle}>{props.title}</h2>
             {props.children}
         </div>
     );

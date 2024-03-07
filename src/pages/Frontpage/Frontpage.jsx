@@ -11,7 +11,7 @@ export const Frontpage = () => {
         <div className={style.figureContainer}>
           <figure>
             <figcaption>
-              <h2>Din guide til sortering</h2>
+              <h2>Din <span>guide til sortering</span></h2>
               <article>
                 <p>
                   Her kan du se hvordan du skal sortere og hvad der skal i
@@ -25,15 +25,18 @@ export const Frontpage = () => {
               </div>
             </figcaption>
             <div className={style.figImg}>
-              <img src="http://localhost:3000/Assets/Images/Photos/medium/affaldssortering-1.jpg" />
+            <img src="http://localhost:3000/Assets/Images/Photos/medium/plastflasker.jpg" />
+              
             </div>
           </figure>
 
           <figure>
-            <div className={style.figImg}></div>
-            <img src="http://localhost:3000/Assets/Images/Photos/medium/plastflasker.jpg" />
+            <div className={style.figImg}>
+            <img src="http://localhost:3000/Assets/Images/Photos/medium/affaldssortering-1.jpg" />
+            </div>
+            
             <figcaption>
-              <h2>Bestil din nye affaldsbeholder</h2>
+              <h2>Bestil <span>din nye affaldsbeholder</span></h2>
               <article>
                 <p>
                   Her kan du se hvordan du skal sortere og hvad der skal i

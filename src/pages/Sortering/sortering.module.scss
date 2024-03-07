@@ -1,6 +1,40 @@
+.sortering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 20px; 
-   
-}   
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center; 
+  text-align: center; 
+  padding: 100px;
+}
+
+
+.searchBar {
+    width: 300px;
+    border-radius: 20px; 
+    padding: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border: none; 
+    outline: none; 
+    transition: box-shadow 0.3s ease; 
+  }
+  
+  .searchBar:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+
+  .linkStyle{
+    text-decoration: none;
+  }
+

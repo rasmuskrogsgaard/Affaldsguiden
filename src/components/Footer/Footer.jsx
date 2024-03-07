@@ -1,9 +1,12 @@
 import style from "./footer.module.scss"
 
+
 export const Footer = () => {
     return (
         <>
+       
         <footer>
+        
         <div>
         <h3>Affaldsguiden</h3>
         <p>Vi arbejder for at informere om korrekt
