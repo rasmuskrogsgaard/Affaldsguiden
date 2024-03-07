@@ -25,14 +25,14 @@ export const Frontpage = () => {
               </div>
             </figcaption>
             <div className={style.figImg}>
-            <img src="http://localhost:3000/Assets/Images/Photos/medium/plastflasker.jpg" />
+            <img src="http://localhost:3000/Assets/Images/Photos/medium/plastflasker.jpg" alt="plastflasker" />
               
             </div>
           </figure>
 
           <figure>
             <div className={style.figImg}>
-            <img src="http://localhost:3000/Assets/Images/Photos/medium/affaldssortering-1.jpg" />
+            <img src="http://localhost:3000/Assets/Images/Photos/medium/affaldssortering-1.jpg" alt="affaldssortering" />
             </div>
             
             <figcaption>

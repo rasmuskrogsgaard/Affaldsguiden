@@ -48,15 +48,16 @@ const Details = () => {
                   />
                   <h3 className={style.categoryTitle}>{category.title}</h3>
                   <button
-                    className={style.toggleButton}
+                    className={`${style.toggleButton} ${style.arrowButton} ${
+                      isExpanded ? style.rotateArrow : ""
+                    }`}
                     onClick={() => handleCategoryToggle(category.id)}
                   >
-                    {isExpanded ? "Collapse" : "Expand"}
+                    &#x2304; 
                   </button>
                 </div>
                 {isExpanded && (
                   <div className={style.categoryContent}>
-                  
                     <p>content</p>
                   </div>
                 )}

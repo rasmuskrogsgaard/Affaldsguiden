@@ -54,11 +54,10 @@ span::before {
     background-color: #b1deb4ff;
 
     content: "";
-    position: absolute;
-    width: calc(100% + 4px);
-    height: 60%;
-    left: -2px;
-    bottom: 0;
-    z-index: -1;
-    transform: rotate(-2deg);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 30%;
+  bottom: 8px;
+    left: -4px;
+  z-index: -1;
 }

@@ -3,6 +3,7 @@ import style from "./hero.module.scss";
 import rightArrowIcon from "../../assets/icon-arrow-right.svg";
 import leftArrowIcon from "../../assets/icon-arrow-left.svg";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderArray = [
@@ -49,12 +50,27 @@ export const Hero = () => {
           <div className={style.heroBoks}>
             <h2>Find og andmeld genbrugsstationer</h2>
             <div className={style.buttonContainer}>
-              <Button
-              name="Find station"
-              />
-              <Button
-              name="Log ind"
-              />
+              <Link to="/genbrugsstationer">
+                <Button
+                  padding="12px"
+                  textAlign="center"
+                  fontSize="14px"
+                  height="50px"
+                  width="140px"
+                  name="Find station"
+                />
+              </Link>
+
+              <Link to="/login">
+                <Button
+                  height="50px"
+                  width="140px"
+                  padding="12px"
+                  textAlign="center"
+                  fontSize="14px"
+                  name="Log ind"
+                />
+              </Link>
             </div>
           </div>
         </div>

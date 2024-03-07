@@ -26,9 +26,6 @@ export const Navbar = () => {
           <li>
             <NavLink to="/bestil">Bestil beholder</NavLink>
           </li>
-          <li>
-            <NavLink to="/login">login</NavLink>
-          </li>
         </ul>
         <div className={style.loginIcon}>
           <img className={style.loginImage} src={unlock}></img>
