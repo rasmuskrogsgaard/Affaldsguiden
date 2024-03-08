@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className={style.footerContent}>
         <div className={style.leftContent}>
           
-          <h3><img src="/src/assets/logo.svg" />Affaldsguiden</h3>
+          <h3><img src="/src/assets/logo.svg" alt="footer logo" />Affaldsguiden</h3>
           <p>
             Vi arbejder for at informere om korrekt affaldsortering. Ved at
             sortere hjælper du os, men også klimaet

@@ -67,10 +67,10 @@ export const Hero = () => {
             alt="Hero Slide"
           />
           <button className={style.arrowLeft} onClick={handlePreviousSlide}>
-            <img src={leftArrowIcon} />
+            <img src={leftArrowIcon} alt="leftarrow" />
           </button>
           <button className={style.arrowRight} onClick={handleNextSlide}>
-            <img src={rightArrowIcon} />
+            <img src={rightArrowIcon} alt="rightarrow"/>
           </button>
           <div className={style.heroBoks}>
             <h2>Find og andmeld genbrugsstationer</h2>
