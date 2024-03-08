@@ -29,15 +29,23 @@ export const Hero = () => {
   };
 
   const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === sliderArray.length - 1 ? 0 : prevSlide + 1
-    );
+    setCurrentSlide((nextSlide) => {
+      if (nextSlide === sliderArray.length - 1) {
+        return 0;
+      } else {
+        return nextSlide + 1;
+      }
+    });
   };
-
+  
   const handlePreviousSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? sliderArray.length - 1 : prevSlide - 1
-    );
+    setCurrentSlide((prevSlide) => {
+      if (prevSlide === 0) {
+        return sliderArray.length - 1;
+      } else {
+        return prevSlide - 1;
+      }
+    });
   };
 
   useEffect(() => {

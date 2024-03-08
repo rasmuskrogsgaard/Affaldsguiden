@@ -6,6 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const Navbar = () => {
+  
+  //toast
   const notifyWarning = () => {
     toast.warn("Page under maintenance", {
       position: "bottom-center",

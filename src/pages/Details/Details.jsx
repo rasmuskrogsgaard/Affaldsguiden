@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import style from "./details.module.scss";
+import { Rules } from "../../components/RuleComponent/Rule";
 
 const Details = () => {
   const { id } = useParams();
@@ -15,9 +16,10 @@ const Details = () => {
         console.error("Error fetching section details:", error)
       );
   }, [id]);
-
+//expand 
   const handleCategoryToggle = (categoryId) => {
     setExpandedCategory(categoryId === expandedCategory ? null : categoryId);
+    
   };
 
   if (!details) {
@@ -48,9 +50,7 @@ const Details = () => {
                   />
                   <h3 className={style.categoryTitle}>{category.title}</h3>
                   <button
-                    className={`${style.toggleButton} ${style.arrowButton} ${
-                      isExpanded ? style.rotateArrow : ""
-                    }`}
+                    className={`${style.toggleButton} ${style.arrowButton}`}
                     onClick={() => handleCategoryToggle(category.id)}
                   >
                     &#x2304; 
@@ -58,7 +58,7 @@ const Details = () => {
                 </div>
                 {isExpanded && (
                   <div className={style.categoryContent}>
-                    <p>{category.rules}</p>
+                    <Rules id={category.id} />
                   </div>
                 )}
               </div>

@@ -15,6 +15,8 @@ const Sortering = () => {
             .catch(error => console.error('Error fetching data:', error));
     }, []);
 
+
+    //søgning filter
     const filteredSections = sections.filter(section =>
         section.title.toLowerCase().includes(searching.toLowerCase()) ||
         section.id.toString().includes(searching) ||
