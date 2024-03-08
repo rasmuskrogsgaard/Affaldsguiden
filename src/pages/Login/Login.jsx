@@ -40,7 +40,7 @@ export const Login = () => {
       });
 
       if (!response.ok) {
-        throw new Error("fejl for fanden");
+        throw new Error("login fejl");
       }
 
       const data = await response.json();
@@ -49,7 +49,7 @@ export const Login = () => {
       localStorage.setItem("userId", data.user.id);
       notify()
     } catch (error) {
-      console.error("login fejl for fan:", error);
+      console.error("login fejl:", error);
     }
   };
 
