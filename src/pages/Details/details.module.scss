@@ -6,13 +6,21 @@
   max-width: 1000px;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  height: 20vh;
+  width: 100%;
+  padding: 20px;
+  img{
+    height: 20vh;
+    border-radius: 10px;
+  }
 }
 
 .categoriesContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .category {
@@ -37,17 +45,11 @@
   }
 }
 
-.category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .arrowButton {
   position: relative;
-  bottom: 0;
+  bottom: -35px;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.798);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -60,4 +62,5 @@
   color: white;
   font-size: larger;
   text-align: center;
+ 
 }

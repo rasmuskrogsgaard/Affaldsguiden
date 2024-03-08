@@ -20,8 +20,15 @@ export const Frontpage = () => {
                 </p>
               </article>
               <div className={style.buttonContainer}>
-                <Button name="placeholder" />
-                <Button name="placeholder" />
+                <Button 
+                  width="150px"
+                  name="Se affaldsguide" />
+                <Button 
+                width="150px"
+                border=" 2px solid var(--lighter-green)"
+                backgroundColor="transparent"
+                color="var(--lighter-green)"
+                name="Bestil storskrald" />
               </div>
             </figcaption>
             <div className={style.figImg}>
@@ -45,8 +52,10 @@ export const Frontpage = () => {
                 </p>
               </article>
               <div className={style.buttonContainer}>
-                <Button name="placeholder" />
-                <Button name="placeholder" />
+                <Button 
+                width="150px"
+                name="Bestil nu" />
+                
               </div>
             </figcaption>
           </figure>

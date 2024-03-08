@@ -58,7 +58,7 @@ const Details = () => {
                 </div>
                 {isExpanded && (
                   <div className={style.categoryContent}>
-                    <p>content</p>
+                    <p>{category.rules}</p>
                   </div>
                 )}
               </div>

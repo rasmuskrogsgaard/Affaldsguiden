@@ -3,7 +3,6 @@
   font-family: "muli", sans-serif;
   align-items: center;
   padding: 0;
-  
   align-items: center;
   text-align: center;
   display: grid;
@@ -17,10 +16,8 @@
   nav {
     padding: 0;
     margin: 0;
-    
   }
   ul {
-
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -38,27 +35,46 @@
     color: var(--lighter-green);
     border-top: 2px solid var(--lighter-green);
   }
-}
 
-.logoContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+  .logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 
-  img {
-    width: 5%;
+    img {
+      width: 5%;
+    }
   }
-}
 
-.loginIcon {
-  padding: 0;
-  margin: 0;
-  .loginImage {
-    width: 3%;
-    background-color: var(--secondary-green);
-    border-radius: 50%;
-    padding: 10px;
+  .loginIcon {
+    padding: 0;
+    margin: 0;
+    .loginImage {
+      width: 3%;
+      background-color: var(--secondary-green);
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    height: auto;
+
+    ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .logoContainer,
+    .loginIcon {
+      display: none;
+    }
+
+    a {
+      font-size: 0.8rem;
+    }
   }
 }

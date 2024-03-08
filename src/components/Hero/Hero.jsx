@@ -4,6 +4,8 @@ import rightArrowIcon from "../../assets/icon-arrow-right.svg";
 import leftArrowIcon from "../../assets/icon-arrow-left.svg";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderArray = [
@@ -11,6 +13,20 @@ export const Hero = () => {
     "http://localhost:3000/Assets/Images/Slideshow/affald-strand-2.jpg",
     "http://localhost:3000/Assets/Images/Slideshow/malerspande.jpg",
   ];
+
+  const notifyWarning = () => {
+    toast.warn("Page under maintenance", {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+     
+    });
+  };
 
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -50,7 +66,7 @@ export const Hero = () => {
           <div className={style.heroBoks}>
             <h2>Find og andmeld genbrugsstationer</h2>
             <div className={style.buttonContainer}>
-              <Link to="/genbrugsstationer">
+              <Link onClick={notifyWarning} to="/">
                 <Button
                   padding="12px"
                   textAlign="center"
@@ -74,6 +90,18 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+        <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       </div>
     </>
   );
