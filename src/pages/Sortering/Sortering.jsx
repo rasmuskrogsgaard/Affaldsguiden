@@ -16,7 +16,7 @@ const Sortering = () => {
     }, []);
 
 
-    //søgning filter
+    //søgning filter  https://github.com/TCAA-Web/Search_in_React
     const filteredSections = sections.filter(section =>
         section.title.toLowerCase().includes(searching.toLowerCase()) ||
         section.id.toString().includes(searching) ||

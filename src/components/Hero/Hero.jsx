@@ -47,6 +47,7 @@ export const Hero = () => {
       }
     });
   };
+  //https://codesandbox.io/p/sandbox/change-image-on-setinterval-q3m16?file=%2Fsrc%2Findex.js
 
   useEffect(() => {
     const intervalId = setInterval(() => {
